@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About BenSurya</title>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+         body {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        body.fade-in {
+            opacity: 1;
+        }
+
+        .fade-out {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        /* Konsisten dengan halaman index.html */
+        body {
+            background-color: rgb(0, 128, 197); /* Latar belakang biru muda */
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Navbar yang konsisten dengan index.html */
+        .navbar {
+            background: linear-gradient(45deg, #00008b, #00c1d4, black); /* Gradien biru tua, biru muda, dan putih */
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .navbar:hover {
+            transform: translateY(-5px); /* Efek naik sedikit saat dihover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Tambah bayangan saat dihover */
+        }
+
+        .navbar .navbar-brand, .navbar-nav .nav-link {
+            color: whitesmoke;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .navbar-brand:hover, .navbar-nav .nav-link:hover {
+            color: #ffcc00; /* Warna kuning saat dihover */
+            text-shadow: 0px 0px 10px rgba(255, 204, 0, 0.7); /* Tambah efek cahaya */
+        }
+        /* Container utama */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color:  #00c1d4;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            color: #333; /* Warna teks */
+        }
+
+        .row {
+            align-items: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Heading */
+        h1 {
+            font-size: 28px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        /* Paragraf */
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: whitesmoke;
+        }
+
+        /* Tombol */
+        .btn {
+            font-size: 14px;
+            padding: 8px 15px;
+            margin-right: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #00008b;
+            color: #fff;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="point">
+        <!--start navbar-->
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <i class="bi bi-house-door"></i> BenSurya
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="fas fa-home"></i> HOME
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ABOUT ME.html">
+                                <i class="fas fa-user"></i> ABOUT ME
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="CONTACT.html">
+                                <i class="fas fa-envelope"></i> NOTICE
+                            </a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <i class="bi bi-portfolio"></i> Portofolio BenSurya
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <!--end navbar-->
+
+    <!-- ABOUT ME section -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="gambar4.jpg" class="img-fluid rounded" alt="BenSurya">
+            </div>
+            <div class="col-md-6">
+                <h1>Tentang BenSurya</h1>
+                <p>Nama saya Ben Surya Akbar Wijaya, lahir pada tanggal 2 Juni 2007 di kota Malang, Jawa Timur. Saya adalah anak kelima dari lima bersaudara dalam keluarga H. Yuliono.</p>
+                <p>Saya sangat menyukai game sejak kecil, terutama Mobile Legend dan game FPS/Adventure lainnya. Selain itu, saya juga aktif dalam seni bela diri Pencak Silat PAGARNUSA, di mana saya telah mengikuti sejak tahun 2022 dan kini sudah bersabuk biru, hanya dua tingkat lagi menuju pelatih.</p>
+                <p>Di sekolah dan lingkungan sekitar, saya dikenal sebagai seorang yang ganteng dan cool, dengan banyak followers di media sosial. Jika ingin tahu lebih banyak tentang saya atau ingin melihat aktivitas saya, bisa cek Instagram saya.</p>
+                <a href="https://www.instagram.com/ben_akbar02/" class="btn btn-primary">Follow Instagram</a>
+                <a href="https://wa.me/089515675014" class="btn btn-primary" target="_blank">Chat Whatsapp</a>
+            </div>
+        </div>
+    </div>
+    <!-- End ABOUT ME section -->
+    <script>
+        // Menambahkan kelas fade-in saat halaman dimuat
+        document.addEventListener("DOMContentLoaded", function () {
+            document.body.classList.add('fade-in');
+        });
+    
+        // Menambahkan efek fade-out saat berpindah halaman
+        document.querySelectorAll('a').forEach(function (anchor) {
+            anchor.addEventListener('click', function (e) {
+                var target = this.getAttribute('href');
+    
+                if (target.startsWith('#') || target.startsWith('javascript')) {
+                    return;
+                }
+    
+                e.preventDefault();
+                document.body.classList.add('fade-out');
+    
+                setTimeout(function () {
+                    window.location.href = target;
+                }, 500);
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+ <!-- Footer -->
+ <footer>
+    &copy; 2024 BenSurya. All rights reserved.
+</footer>
+
+</html>
