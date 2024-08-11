@@ -30,7 +30,7 @@
             background-color: rgb(0, 128, 197); /* Latar belakang biru muda */
             color: white;
             font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #007bff, #00c6ff); /* Gradien dari biru ke cyan */
+            background: linear-gradient(to bottom, #007bff, #00c6ff); 
             overflow-x: hidden;
         }
 
@@ -38,7 +38,7 @@
             text-align: center;
             padding: 50px;
             color: black;
-            animation: fadeIn 2s ease-in-out; /* Efek fade in */
+            animation: fadeIn 2s ease-in-out; 
         }
 
         .thank-you-container img {
@@ -50,11 +50,11 @@
             border-style: ridge;
             border-color: black;
             border-radius: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
         }
 
         .thank-you-container img:hover {
-            transform: scale(1.05); /* Efek zoom in saat dihover */
+            transform: scale(1.05); 
         }
 
         .thank-you-container h1 {
@@ -62,13 +62,13 @@
         }
 
         .navbar {
-            background: linear-gradient(45deg, #00008b, #00c1d4, black); /* Gradien biru tua, biru muda, dan putih */
+            background: linear-gradient(45deg, #00008b, #00c1d4, black); 
             transition: background 0.3s ease, transform 0.3s ease;
         }
 
         .navbar:hover {
-            transform: translateY(-5px); /* Efek naik sedikit saat dihover */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Tambah bayangan saat dihover */
+            transform: translateY(-5px); 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
         }
 
         .navbar .navbar-brand, .navbar-nav .nav-link {
@@ -77,22 +77,22 @@
         }
 
         .navbar .navbar-brand:hover, .navbar-nav .nav-link:hover {
-            color: #ffcc00; /* Warna kuning saat dihover */
-            text-shadow: 0px 0px 10px rgba(255, 204, 0, 0.7); /* Tambah efek cahaya */
+            color: #ffcc00;
+            text-shadow: 0px 0px 10px rgba(255, 204, 0, 0.7); 
         }
         h1 {
             color: white;
             font-family: fantasy;
-            letter-spacing: 2px; /* Spasi huruf */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow pada teks */
-            animation: slideIn 1s ease-out; /* Efek slide in */
+            letter-spacing: 2px; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: slideIn 1s ease-out; 
         }
 
         p {
             color: whitesmoke;
             font-family: 'Trebuchet MS';
             font-size: 1.1em;
-            animation: fadeIn 2s ease-in-out; /* Efek fade in */
+            animation: fadeIn 2s ease-in-out;
         }
 
         .social-icons {
@@ -107,8 +107,8 @@
         }
 
         .social-icons a:hover {
-            color: #ffcc00; /* Warna kuning saat dihover */
-            transform: scale(1.2); /* Efek zoom in pada ikon */
+            color: #ffcc00;
+            transform: scale(1.2); 
         }
 
         @keyframes fadeIn {
@@ -213,12 +213,12 @@
     </div>
     <!-- End Thank You Section -->
     <script>
-        // Menambahkan kelas fade-in saat halaman dimuat
+     
         document.addEventListener("DOMContentLoaded", function () {
             document.body.classList.add('fade-in');
         });
     
-        // Menambahkan efek fade-out saat berpindah halaman
+       
         document.querySelectorAll('a').forEach(function (anchor) {
             anchor.addEventListener('click', function (e) {
                 var target = this.getAttribute('href');
